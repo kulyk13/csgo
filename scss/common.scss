@@ -82,4 +82,36 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-arrow:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-check:before {
+  content: "\e901";
+  color: #f3a917;
+}
+.icon-facebook:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-people:before {
+  content: "\e903";
+}
+.icon-play:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-twitch:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-twitter:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-vk:before {
+  content: "\e907";
+  color: #fff;
+}
 /* ----- COMMON STYLES END ----- */
