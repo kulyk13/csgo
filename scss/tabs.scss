@@ -1,0 +1,10 @@
+//TABS
+.tabs {
+  &__link {
+    &:hover,
+    &:focus-within {
+    }
+    &.tabs__link--active {
+    }
+  }
+}

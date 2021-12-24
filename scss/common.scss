@@ -1,0 +1,87 @@
+@import "variables.scss";
+@import "mixins.scss";
+/* ----- COMMON STYLES START ----- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+span,
+::before,
+::after {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  display: inline-flex;
+  transition: $tr_time;
+  padding: 10px;
+}
+input {
+  font: inherit;
+  border: 0;
+}
+img {
+  object-fit: cover;
+}
+body {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: $bg_color;
+  color: $text_color;
+}
+a {
+  color: $text_color;
+  padding: 10px;
+  transition: $tr_time;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.section-title {
+}
+.container {
+  max-width: 1550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.logo {
+  margin-left: -10px;
+}
+@import "menu.scss";
+@import "button.scss";
+@import "form.scss";
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ----- COMMON STYLES END ----- */
