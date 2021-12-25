@@ -48,6 +48,10 @@ a {
   color: $text_color;
   padding: 10px;
   transition: $tr_time;
+  &:hover,
+  &:focus-within {
+    color: $brand_color;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -67,6 +71,25 @@ a {
 .logo {
   margin-left: -10px;
 }
+.socials {
+  display: flex;
+  align-items: center;
+  &__item:nth-child(n + 2) {
+    margin-left: 20px;
+  }
+  .icon-twitter {
+    font-size: 17px;
+  }
+  .icon-twitch {
+    font-size: 18px;
+  }
+  .icon-facebook {
+    font-size: 20px;
+  }
+  .icon-vk {
+    font-size: 15px;
+  }
+}
 @import "button.scss";
 [class^="icon-"],
 [class*=" icon-"] {
@@ -82,36 +105,28 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-arrow:before {
   content: "\e900";
-  color: #fff;
 }
 .icon-check:before {
   content: "\e901";
-  color: #f3a917;
 }
 .icon-facebook:before {
   content: "\e902";
-  color: #fff;
 }
 .icon-people:before {
   content: "\e903";
 }
 .icon-play:before {
   content: "\e904";
-  color: #fff;
 }
 .icon-twitch:before {
   content: "\e905";
-  color: #fff;
 }
 .icon-twitter:before {
   content: "\e906";
-  color: #fff;
 }
 .icon-vk:before {
   content: "\e907";
-  color: #fff;
 }
 /* ----- COMMON STYLES END ----- */
