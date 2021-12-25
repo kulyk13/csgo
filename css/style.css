@@ -331,7 +331,7 @@ img {
 
 body {
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1;
   background-color: #010104;
@@ -363,6 +363,10 @@ a:hover, a:focus-within {
   padding: 0 15px;
 }
 
+.container-wide {
+  max-width: 1920px;
+}
+
 .logo {
   margin-left: -10px;
 }
@@ -389,6 +393,51 @@ a:hover, a:focus-within {
 }
 .socials .icon-vk {
   font-size: 15px;
+}
+
+.offer {
+  max-width: 700px;
+}
+.offer__img {
+  margin-bottom: 35px;
+}
+.offer__title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.offer__text {
+  font-weight: 400;
+  line-height: 1.22;
+}
+.offer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 220px;
+}
+.offer__cta-item:nth-child(n+2) {
+  margin-left: 35px;
+}
+.offer__btn {
+  width: 246px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  color: white;
+  border: 2px solid #f3a916;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.btn:hover, .btn:focus-within {
+  background-color: #f3a916;
+  color: black;
 }
 
 [class^=icon-],
@@ -440,7 +489,7 @@ a:hover, a:focus-within {
 /* ----- COMMON STYLES END ----- */
 /* ----- HEADER START ----- */
 .header {
-  padding-top: 20px;
+  padding-top: 13px;
   padding-bottom: 20px;
   background-color: transparent;
 }
@@ -457,6 +506,7 @@ a:hover, a:focus-within {
   max-width: 740px;
   position: relative;
   left: 0;
+  z-index: 10;
 }
 .header__wrap::after {
   content: "";
@@ -474,8 +524,31 @@ a:hover, a:focus-within {
 /* ----- HEADER END ----- */
 /* ----- HERO START ----- */
 .hero {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 200px;
+  margin-top: -117px;
+}
+.hero-slider {
+  padding: 0;
+}
+.hero .hero-slider__pagination.swiper-pagination {
+  bottom: 32px;
+}
+.hero .hero-slider__pagination.swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+.hero .hero-slider__pagination.swiper-pagination .swiper-pagination-bullet:nth-child(n+2) {
+  margin-left: 18px;
+}
+.hero .hero-slider__pagination.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f3a916;
+}
+.hero__offer {
+  margin-top: -720px;
+  position: relative;
+  z-index: 20;
 }
 
 /* ----- HERO END ----- */

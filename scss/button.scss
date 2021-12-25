@@ -1,8 +1,12 @@
 //BUTTON
 .btn {
-  
+  color: $text_color;
+  border: 2px solid $brand_color;
+  padding-top: 15px;
+  padding-bottom: 15px;
   &:hover,
   &:focus-within {
-    
+    background-color: $brand_color;
+    color: $text_color_dark;
   }
 }

@@ -5,7 +5,7 @@
 @import "mixins.scss";
 /* ----- HEADER START ----- */
 .header {
-  padding-top: 20px;
+  padding-top: 13px;
   padding-bottom: 20px;
   background-color: transparent;
   &__wrap {
@@ -15,6 +15,7 @@
     max-width: 740px;
     position: relative;
     left: 0;
+    z-index: 10;
     &::after {
       content: "";
       width: 100%;
@@ -32,8 +33,33 @@
 /* ----- HEADER END ----- */
 /* ----- HERO START ----- */
 .hero {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 200px;
+  margin-top: -117px;
+  &-slider {
+    padding: 0;
+  }
+  .hero-slider__pagination {
+    &.swiper-pagination {
+      bottom: 32px;
+      .swiper-pagination-bullet {
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+        &:nth-child(n + 2) {
+          margin-left: 18px;
+        }
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $brand_color;
+      }
+    }
+  }
+  &__offer {
+    margin-top: -720px;
+    position: relative;
+    z-index: 20;
+  }
 }
 /* ----- HERO END ----- */
 /* -----  START ----- */

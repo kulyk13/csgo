@@ -38,7 +38,7 @@ body {
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", "Roboto",
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1;
   background-color: $bg_color;
@@ -68,6 +68,9 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-wide {
+  max-width: 1920px;
+}
 .logo {
   margin-left: -10px;
 }
@@ -90,6 +93,7 @@ a {
     font-size: 15px;
   }
 }
+@import "offer.scss";
 @import "button.scss";
 [class^="icon-"],
 [class*=" icon-"] {

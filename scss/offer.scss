@@ -1,0 +1,32 @@
+//OFFER
+.offer {
+  max-width: 700px;
+  &__img {
+    margin-bottom: 35px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-weight: 400;
+    line-height: 1.22;
+  }
+  &__cta {
+    display: flex;
+    margin-top: 220px;
+    &-item {
+      &:nth-child(n + 2) {
+        margin-left: 35px;
+      }
+    }
+  }
+  &__btn {
+    width: 246px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+  }
+}

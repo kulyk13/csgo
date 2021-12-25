@@ -1,9 +1,15 @@
 //Hero slider
 const heroSlider = new Swiper('.hero-slider', {
     loop: true,
+    centeredSlides: true,
+    speed: 650,
+    autoplay: {
+        delay: 4000,
+    },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
     },
 })
 
