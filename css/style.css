@@ -334,12 +334,12 @@ body {
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
-  background-color: white;
-  color: #333333;
+  background-color: #010104;
+  color: white;
 }
 
 a {
-  color: #333333;
+  color: white;
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 <body>
     <header class="header container">
         <div class="header__wrap">
-            <a class="logo header__logo">
+            <a href="index.html" class="logo header__logo">
                 <img src="img/logo.svg" alt="CS:GO" class="logo__link header__logo-link" width="" height="" />
             </a>
             <ul class="socials header__socials">
@@ -56,19 +56,19 @@
     <main class="main">
         <h1 class="visually-hidden">CSGO</h1>
         <section class="hero">
-            <div class="hero__slider swiper">
-                <div class="hero__slider-wrap swiper-wrapper">
-                    <div class="hero__slider-slide swiper-slide">
-                        <img src="img/hero-img1.webp" alt="" class="hero__slider-img" width="" height="">
+            <div class="hero-slider swiper">
+                <div class="hero-slider__wrap swiper-wrapper">
+                    <div class="hero-slider__slide swiper-slide">
+                        <img src="img/hero-img1.webp" alt="" class="hero-slider__img" width="" height="">
                     </div>
-                    <div class="hero__slider-slide swiper-slide">
-                        <img src="img/hero-img2.webp" alt="" class="hero__slider-img" width="" height="">
+                    <div class="hero-slider__slide swiper-slide">
+                        <img src="img/hero-img2.webp" alt="" class="hero-slider__img" width="" height="">
                     </div>
-                    <div class="hero__slider-slide swiper-slide">
-                        <img src="img/hero-img3.webp" alt="" class="hero__slider-img" width="" height="">
+                    <div class="hero-slider__slide swiper-slide">
+                        <img src="img/hero-img3.webp" alt="" class="hero-slider__img" width="" height="">
                     </div>
                 </div>
-                <div class="hero__slider-pagination swiper-pagination"></div>
+                <div class="hero-slider__pagination swiper-pagination"></div>
             </div>
             <div class="hero__wrap container">
                 <div class="offer hero__offer">
@@ -87,6 +87,242 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section class="schedule">
+            <div class="schedule__wrap container">
+                <h2 lang="ru" class="section-title schedule__title">Расписание и результаты</h2>
+                <ul class="tabs schedule__tabs">
+                    <li class="tabs__item schedule__tabs-item">
+                        <button type="button" class="btn tabs__btn schedule__tabs-btn">Matches</button>
+                    </li>
+                    <li class="tabs__item schedule__tabs-item">
+                        <button type="button" class="btn tabs__btn schedule__tabs-btn">Battles</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-slider swiper">
+                <div class="schedule-slider__wrap swiper-wrapper">
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/agreen.webp" alt="agreen" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/noping.webp" alt="noping" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Jenny Bell <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Arlene Robertson <span
+                                    class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/people.svg" alt="poeple" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/forze.webp" alt="forze" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Regina Watson <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Kathryn Jones <span
+                                    class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/boom.webp" alt="boom" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/a-star.webp" alt="a-star" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Ricardo Hawkins <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Bruce Simmons
+                                53.22 <span class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/agreen.webp" alt="agreen" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/noping.webp" alt="noping" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Jenny Bell <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Arlene Robertson <span
+                                    class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/people.svg" alt="poeple" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/forze.webp" alt="forze" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Regina Watson <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Kathryn Jones <span
+                                    class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                    <article class="schedule-slider__card swiper-slide">
+                        <div class="schedule-slider__card-header">
+                            <h3 class="schedule-slider__card-title">Asia Minor: Play-Off</h3>
+                            <p class="schedule-slider__card-date">29 Oct <span
+                                    class="schedule-slider__card-time">19:00</span></p>
+                        </div>
+                        <ul class="schedule-slider__card-badges">
+                            <li class="schedule-card__badge">
+                                <img src="img/boom.webp" alt="boom" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                            <li class="schedule-slider__card-badges">
+                                <img src="img/a-star.webp" alt="a-star" class="schedule-slider__card-img" width="50"
+                                    height="50" loading="lazy">
+                            </li>
+                        </ul>
+                        <ul class="schedule-slider__card-names">
+                            <li class="schedule-slider__card-name">Ricardo Hawkins <span
+                                    class="schedule-slider__card-multiplier">3.22</span>
+                            </li>
+                            <li class="schedule-slider__card-name">Bruce Simmons
+                                53.22 <span class="schedule-slider__card-multiplierr">53.22</span>
+                            </li>
+                        </ul>
+                        <div class="schedule-slider__footer">
+                            <p class="schedule-slider__footer-text">Starts in: <span id="cardTime"
+                                    class="schedule-slider__footer-time">5 hours 39 min</span> • Bо 3</p>
+                            <img src="img/ggbet.webp" alt="ggbet" class="schedule-slider__footer-img" width="58"
+                                height="15" loading="lazy">
+                        </div>
+                        <a href="#" class="schedule-card__btn">
+                            <i class="icon-play"></i>
+                            Watch live
+                        </a>
+                    </article>
+                </div>
+                <button type="button" class="schedule-slider__btn schedule-slider__btn--prev swiper-button-prev"
+                    aria-label="Previous">
+                    <i class="icon-arrow"></i>
+                </button>
+                <button type="button" class="schedule-slider__btn schedule-slider__btn--next swiper-button-next"
+                    aria-label="Next">
+                    <i class="icon-arrow"></i>
+                </button>
+                <div class="schedule-slider__pagination swiper-pagination"></div>
             </div>
         </section>
     </main>
