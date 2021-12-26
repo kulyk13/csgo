@@ -1,10 +1,19 @@
 //TABS
 .tabs {
-  &__link {
+  display: flex;
+  &__btn {
+    border: 1px solid $brand_color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 152px;
+    justify-content: center;
     &:hover,
     &:focus-within {
+      color: #fff;
     }
-    &.tabs__link--active {
+    &.tabs__btn--active {
+      background-color: $brand_color;
+      color: #fff;
     }
   }
 }

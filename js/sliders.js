@@ -15,7 +15,8 @@ const heroSlider = new Swiper('.hero-slider', {
 
 //Schedule slider
 const scheduleSlider = new Swiper('.schedule-slider', {
-    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 40,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -23,5 +24,6 @@ const scheduleSlider = new Swiper('.schedule-slider', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
     },
 })
