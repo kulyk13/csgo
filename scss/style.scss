@@ -74,6 +74,12 @@
       padding: 10px 10px 150px 10px;
       margin-left: -10px;
     }
+    &__wrap {
+      display: flex;
+      &.visibility {
+        display: none;
+      }
+    }
     &__card {
       background-color: $bg_color2;
       border-radius: 10px;

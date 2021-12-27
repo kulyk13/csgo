@@ -603,6 +603,14 @@ a:hover, a:focus-within {
   padding: 10px 10px 150px 10px;
   margin-left: -10px;
 }
+.schedule-slider__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.schedule-slider__wrap.visibility {
+  display: none;
+}
 .schedule-slider__card {
   background-color: #28292e;
   border-radius: 10px;

@@ -99,11 +99,11 @@
                 <h2 lang="ru" class="section-title schedule__title">Расписание и результаты</h2>
                 <ul class="tabs schedule__tabs">
                     <li class="tabs__item schedule__tabs-item">
-                        <button type="button"
+                        <button id="matchesTab" type="button"
                             class="btn tabs__btn tabs__btn--active schedule__tabs-btn">Matches</button>
                     </li>
                     <li class="tabs__item schedule__tabs-item">
-                        <button type="button" class="btn tabs__btn schedule__tabs-btn">Battles</button>
+                        <button id="battlesTab" type="button" class="btn tabs__btn schedule__tabs-btn">Battles</button>
                     </li>
                 </ul>
                 <div id="scheduleSliderContent" class="schedule-slider swiper">
@@ -325,7 +325,7 @@
                             </a>
                         </article>
                     </div>
-                    <!-- <div id="battlesSlider" class="schedule-slider__wrap battles swiper-wrapper">
+                    <div id="battlesSlider" class="schedule-slider__wrap battles swiper-wrapper visibility">
                         <article class="schedule-slider__card swiper-slide">
                             <div class="schedule-slider__card-header">
                                 <h3 class="schedule-slider__card-title">Group Stage</h3>
@@ -476,7 +476,7 @@
                                 Watch live
                             </a>
                         </article>
-                    </div> -->
+                    </div>
                     <button type="button" class="schedule-slider__btn schedule-slider__btn--prev swiper-button-prev"
                         aria-label="Previous">
                         <i class="icon-arrow"></i>
@@ -487,6 +487,7 @@
                     </button>
                     <div class="schedule-slider__pagination swiper-pagination"></div>
                 </div>
+
             </div>
         </section>
         <section class="stages-section">
@@ -696,6 +697,7 @@
     </footer>
 
     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="js/app.js"></script>
     <script defer src="js/sliders.js"></script>
 </body>
 
