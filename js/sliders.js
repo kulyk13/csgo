@@ -1,6 +1,8 @@
 //Hero slider
 const heroSlider = new Swiper('.hero-slider', {
     loop: true,
+    preloadImages: false,
+    lazy: true,
     centeredSlides: true,
     speed: 650,
     autoplay: {
