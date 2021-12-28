@@ -76,9 +76,6 @@
     }
     &__wrap {
       display: flex;
-      &.visibility {
-        display: none;
-      }
     }
     &__card {
       background-color: $bg_color2;
@@ -193,38 +190,27 @@
           margin-right: 10px;
         }
       }
-    }
-    &__footer {
-      display: flex;
-      justify-content: space-between;
-      &-text {
-        color: $text_color_gray;
-        font-weight: 400;
-        font-size: 12px;
-      }
-    }
-    .battles {
-      .schedule-slider__card {
-        padding: 47px 35px;
-        &-badges {
+      &.battle {
+        padding: 44px 35px;
+        .schedule-slider__card-badges {
           margin-bottom: 29px;
         }
-        &-group {
+        .schedule-slider__card-group {
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 10px;
         }
-        &-names {
+        .schedule-slider__card-names {
           margin-bottom: 0;
         }
-        &-name {
+        .schedule-slider__card-name {
           line-height: 1.75;
           &:nth-last-child(n + 2) {
             margin-bottom: 0;
           }
         }
-        &-number {
+        .schedule-slider__card-number {
           padding: 5px 10px;
           border: 1px solid $brand_color;
           line-height: 1.42;
@@ -235,6 +221,18 @@
             line-height: 1.66;
           }
         }
+      }
+      &.visibility {
+        display: none;
+      }
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        color: $text_color_gray;
+        font-weight: 400;
+        font-size: 12px;
       }
     }
     &__btn {
@@ -407,58 +405,6 @@
       line-height: 1.8;
     }
   }
-  .registered-table {
-    font-size: 20px;
-    line-height: 1.75;
-    &__header-item {
-      border: 1px solid $brand_color;
-      background-color: $brand_color;
-      font-weight: 400;
-      line-height: 1.75;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      color: #000;
-      &:nth-child(n + 2) {
-        font-weight: 500;
-        text-align: left;
-        padding-left: 10px;
-      }
-    }
-    &__row {
-      &:hover,
-      &:focus-within {
-        .registered-table__cell {
-          background-color: #fff;
-          color: #000;
-          &-link {
-            color: #000;
-          }
-        }
-      }
-    }
-    &__cell {
-      border: 1px solid $brand_color;
-      padding: 10px 19px;
-      background-color: $bg_color2;
-      transition: $tr_time;
-      &-img {
-        margin-right: 10px;
-      }
-      &-link {
-        font-weight: 500;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 382px;
-      }
-      &.registered-table__cell--number {
-        text-align: center;
-        font-weight: 400;
-      }
-      &.registered-table__cell--name {
-        padding: 0;
-      }
-    }
-  }
   &__nav {
     margin-top: 46px;
     &-list {
@@ -473,6 +419,58 @@
     }
     &-link {
       text-transform: uppercase;
+    }
+  }
+}
+.registered-table {
+  font-size: 20px;
+  line-height: 1.75;
+  &__header-item {
+    border: 1px solid $brand_color;
+    background-color: $brand_color;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    &:nth-child(n + 2) {
+      font-weight: 500;
+      text-align: left;
+      padding-left: 10px;
+    }
+  }
+  &__row {
+    &:hover,
+    &:focus-within {
+      .registered-table__cell {
+        background-color: #fff;
+        color: #000;
+        &-link {
+          color: #000;
+        }
+      }
+    }
+  }
+  &__cell {
+    border: 1px solid $brand_color;
+    padding: 10px 19px;
+    background-color: $bg_color2;
+    transition: $tr_time;
+    &-img {
+      margin-right: 10px;
+    }
+    &-link {
+      font-weight: 500;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 382px;
+    }
+    &.registered-table__cell--number {
+      text-align: center;
+      font-weight: 400;
+    }
+    &.registered-table__cell--name {
+      padding: 0;
     }
   }
 }

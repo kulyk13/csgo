@@ -608,9 +608,6 @@ a:hover, a:focus-within {
   display: -ms-flexbox;
   display: flex;
 }
-.schedule-slider__wrap.visibility {
-  display: none;
-}
 .schedule-slider__card {
   background-color: #28292e;
   border-radius: 10px;
@@ -747,6 +744,45 @@ a:hover, a:focus-within {
 .schedule-slider__card-btn .icon-play {
   margin-right: 10px;
 }
+.schedule-slider__card.battle {
+  padding: 44px 35px;
+}
+.schedule-slider__card.battle .schedule-slider__card-badges {
+  margin-bottom: 29px;
+}
+.schedule-slider__card.battle .schedule-slider__card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.schedule-slider__card.battle .schedule-slider__card-names {
+  margin-bottom: 0;
+}
+.schedule-slider__card.battle .schedule-slider__card-name {
+  line-height: 1.75;
+}
+.schedule-slider__card.battle .schedule-slider__card-name:nth-last-child(n+2) {
+  margin-bottom: 0;
+}
+.schedule-slider__card.battle .schedule-slider__card-number {
+  padding: 5px 10px;
+  border: 1px solid #f3a916;
+  line-height: 1.42;
+  text-transform: uppercase;
+}
+.schedule-slider__card.battle .schedule-slider__footer-text {
+  line-height: 1.66;
+}
+.schedule-slider__card.visibility {
+  display: none;
+}
 .schedule-slider__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,42 +795,6 @@ a:hover, a:focus-within {
   color: #757c84;
   font-weight: 400;
   font-size: 12px;
-}
-.schedule-slider .battles .schedule-slider__card {
-  padding: 47px 35px;
-}
-.schedule-slider .battles .schedule-slider__card-badges {
-  margin-bottom: 29px;
-}
-.schedule-slider .battles .schedule-slider__card-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-.schedule-slider .battles .schedule-slider__card-names {
-  margin-bottom: 0;
-}
-.schedule-slider .battles .schedule-slider__card-name {
-  line-height: 1.75;
-}
-.schedule-slider .battles .schedule-slider__card-name:nth-last-child(n+2) {
-  margin-bottom: 0;
-}
-.schedule-slider .battles .schedule-slider__card-number {
-  padding: 5px 10px;
-  border: 1px solid #f3a916;
-  line-height: 1.42;
-  text-transform: uppercase;
-}
-.schedule-slider .battles .schedule-slider__card .schedule-slider__footer-text {
-  line-height: 1.66;
 }
 .schedule-slider__btn {
   border: 2px solid #f3a916;
@@ -983,56 +983,6 @@ a:hover, a:focus-within {
   font-size: 25px;
   line-height: 1.8;
 }
-.footer .registered-table {
-  font-size: 20px;
-  line-height: 1.75;
-}
-.footer .registered-table__header-item {
-  border: 1px solid #f3a916;
-  background-color: #f3a916;
-  font-weight: 400;
-  line-height: 1.75;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #000;
-}
-.footer .registered-table__header-item:nth-child(n+2) {
-  font-weight: 500;
-  text-align: left;
-  padding-left: 10px;
-}
-.footer .registered-table__row:hover .registered-table__cell, .footer .registered-table__row:focus-within .registered-table__cell {
-  background-color: #fff;
-  color: #000;
-}
-.footer .registered-table__row:hover .registered-table__cell-link, .footer .registered-table__row:focus-within .registered-table__cell-link {
-  color: #000;
-}
-.footer .registered-table__cell {
-  border: 1px solid #f3a916;
-  padding: 10px 19px;
-  background-color: #28292e;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.footer .registered-table__cell-img {
-  margin-right: 10px;
-}
-.footer .registered-table__cell-link {
-  font-weight: 500;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 20px;
-  padding-right: 382px;
-}
-.footer .registered-table__cell.registered-table__cell--number {
-  text-align: center;
-  font-weight: 400;
-}
-.footer .registered-table__cell.registered-table__cell--name {
-  padding: 0;
-}
 .footer__nav {
   margin-top: 46px;
 }
@@ -1054,26 +1004,314 @@ a:hover, a:focus-within {
   text-transform: uppercase;
 }
 
+.registered-table {
+  font-size: 20px;
+  line-height: 1.75;
+}
+.registered-table__header-item {
+  border: 1px solid #f3a916;
+  background-color: #f3a916;
+  font-weight: 400;
+  line-height: 1.75;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+}
+.registered-table__header-item:nth-child(n+2) {
+  font-weight: 500;
+  text-align: left;
+  padding-left: 10px;
+}
+.registered-table__row:hover .registered-table__cell, .registered-table__row:focus-within .registered-table__cell {
+  background-color: #fff;
+  color: #000;
+}
+.registered-table__row:hover .registered-table__cell-link, .registered-table__row:focus-within .registered-table__cell-link {
+  color: #000;
+}
+.registered-table__cell {
+  border: 1px solid #f3a916;
+  padding: 10px 19px;
+  background-color: #28292e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.registered-table__cell-img {
+  margin-right: 10px;
+}
+.registered-table__cell-link {
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 382px;
+}
+.registered-table__cell.registered-table__cell--number {
+  text-align: center;
+  font-weight: 400;
+}
+.registered-table__cell.registered-table__cell--name {
+  padding: 0;
+}
+
 /* ----- FOOTER END ----- */
 /* ----- ADAPTIVE START ----- */
+@media (max-width: 1499.98px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .container-wide {
+    max-width: 1700px;
+  }
+
+  .hero-slider__slide-img {
+    -o-object-position: -217px 0px;
+       object-position: -217px 0px;
+  }
+
+  .schedule-slider__card {
+    padding: 30px 25px;
+  }
+  .schedule-slider__card-time {
+    font-size: 17px;
+  }
+  .schedule-slider__card-name {
+    font-size: 17px;
+  }
+  .schedule-slider .battles .schedule-slider__card {
+    padding: 43px 25px;
+  }
+}
 @media (max-width: 1399.98px) {
   .container {
     max-width: 1170px;
+  }
+
+  .container-wide {
+    max-width: 1400px;
+  }
+
+  .header__wrap {
+    max-width: 600px;
+  }
+
+  .hero-slider__slide-img {
+    -o-object-position: -413px 0px;
+       object-position: -413px 0px;
+  }
+
+  .schedule-slider__card-img {
+    width: 40px;
+    height: 40px;
+  }
+  .schedule-slider__card-name {
+    font-size: 15px;
+  }
+  .schedule-slider__card-number {
+    font-size: 15px;
+  }
+  .schedule-slider__card.battle .schedule-slider__card-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .footer__info-registered {
+    font-size: 26px;
+  }
+  .footer__info-timer {
+    font-size: 20px;
+  }
+  .footer__nav-link {
+    font-size: 16px;
+  }
+
+  .registered-table {
+    font-size: 16px;
+  }
+  .registered-table__cell-link {
+    padding-right: 260px;
   }
 }
 @media (max-width: 1199.98px) {
   .container {
     max-width: 990px;
   }
+
+  .container-wide {
+    max-width: 1200px;
+  }
+
+  .header__wrap {
+    max-width: 530px;
+  }
+  .header__wrap::after {
+    bottom: -10px;
+  }
+  .header__wrap .icon-twitter {
+    font-size: 15px;
+  }
+  .header__wrap .icon-twitch {
+    font-size: 16px;
+  }
+  .header__wrap .icon-facebook {
+    font-size: 18px;
+  }
+  .header__wrap .icon-vk {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding-bottom: 332px;
+  }
+  .hero-slider__slide-img {
+    -o-object-position: -614px 0px;
+       object-position: -614px 0px;
+  }
+  .hero__offer {
+    max-width: 570px;
+    margin-top: -775px;
+  }
+  .hero__offer-title {
+    font-size: 50px;
+  }
+  .hero__offer-cta {
+    margin-top: 130px;
+  }
+
+  .schedule-slider .battles .schedule-slider__card {
+    padding: 39px 25px;
+  }
+
+  .stages-section__offer {
+    max-width: 392px;
+  }
+  .stages-section__offer-text {
+    font-size: 16px;
+  }
+
+  .registered-table__cell-link {
+    padding-right: 205px;
+  }
 }
 @media (max-width: 991.98px) {
   .container {
     max-width: 750px;
   }
+
+  .container-wide {
+    max-width: 1000px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .header__wrap {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding-bottom: 205px;
+  }
+  .hero-slider__slide .hero-slider__slide-img {
+    width: 1544px;
+    height: 800px;
+  }
+  .hero-slider__slide:nth-child(3) .hero-slider__slide-img {
+    -o-object-position: -230px 0px;
+       object-position: -230px 0px;
+  }
+  .hero__offer {
+    max-width: 450px;
+    margin-top: -580px;
+  }
+  .hero__offer-title {
+    font-size: 38px;
+  }
+  .hero__offer-text {
+    font-size: 15px;
+  }
+  .hero__offer-cta {
+    margin-top: 90px;
+  }
+  .hero__offer-btn {
+    font-size: 14px;
+    width: 205px;
+  }
+
+  .schedule__tabs-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 125px;
+  }
+  .schedule-slider__card.battle {
+    padding: 39px 35px;
+  }
+
+  .stages-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .stages-section__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stages-section__offer {
+    max-width: 70%;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-top: 190px;
+    background-position: 25% 50%;
+  }
+  .footer__content {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767.98px) {
   .container {
     max-width: 570px;
+  }
+
+  .container-wide {
+    max-width: 800px;
+  }
+
+  .hero {
+    padding-bottom: 145px;
+  }
+  .hero-slider__slide .hero-slider__slide-img {
+    width: 1400px;
+    height: 700px;
+  }
+  .hero__offer {
+    margin-top: -520px;
+  }
+
+  .schedule {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .schedule-slider__card {
+    padding: 25px 20px;
+  }
+  .schedule-slider__card.battle {
+    padding: 38px 25px;
+  }
+
+  .footer {
+    padding-top: 150px;
   }
 }
 @media (max-width: 575.98px) {
