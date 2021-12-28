@@ -24,3 +24,19 @@ battlesTabBtn.addEventListener("click", (ev) => {
         battleCard.classList.remove("visibility");
     });
 });
+
+//Timer
+let endDate = + new Date() + 930000;
+
+let timer = setInterval(function() {
+    let now = new Date().getTime();
+    let t = endDate - now;
+    if (t >= 0) {
+        let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        let secs = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("timerMin").innerHTML = ("0" + mins).slice(-2);
+        document.getElementById("timerSec").innerHTML = ("0" + secs).slice(-2);  
+    } else {
+        document.getElementById("timer").innerHTML = "Время вышло!"
+    }
+}, 1000)
