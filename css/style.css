@@ -1246,6 +1246,12 @@ a:hover, a:focus-within {
     padding-bottom: 15px;
     width: 125px;
   }
+  .schedule-slider__card:hover .schedule-slider__card-btn, .schedule-slider__card:focus-within .schedule-slider__card-btn {
+    visibility: visible;
+  }
+  .schedule-slider__card-btn {
+    visibility: hidden;
+  }
   .schedule-slider__card.battle {
     padding: 39px 35px;
   }
@@ -1317,6 +1323,182 @@ a:hover, a:focus-within {
 @media (max-width: 575.98px) {
   .container {
     max-width: 100%;
+  }
+
+  .container-wide {
+    max-width: 800px;
+  }
+
+  .hero {
+    padding-bottom: 92px;
+  }
+  .hero__offer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__offer-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+  }
+  .hero__offer-cta-item:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  .schedule__tabs {
+    margin-bottom: 50px;
+  }
+  .schedule-slider.swiper {
+    padding-bottom: 10px;
+  }
+  .schedule-slider__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .schedule-slider__card {
+    max-width: 353px;
+    width: 100%;
+    padding: 20px 23px;
+  }
+  .schedule-slider__card:nth-last-child(n+2) {
+    margin-bottom: 20px;
+  }
+  .schedule-slider__card-header {
+    padding-bottom: 6px;
+    margin-bottom: 19px;
+  }
+  .schedule-slider__card-badges {
+    margin-bottom: 12px;
+  }
+  .schedule-slider__card-img {
+    width: 25px;
+    height: 25px;
+  }
+  .schedule-slider__card-name {
+    font-size: 16px;
+    line-height: 2.2;
+  }
+  .schedule-slider__card-name:nth-last-child(n+2) {
+    margin-bottom: 0;
+  }
+  .schedule-slider__card.battle {
+    padding: 24px 25px;
+  }
+  .schedule-slider__btn.schedule-slider__btn--next, .schedule-slider__btn.schedule-slider__btn--prev {
+    display: none;
+  }
+}
+@media (max-width: 464.98px) {
+  .hero-slider__slide-img {
+    width: 1350px;
+  }
+  .hero__offer-img {
+    margin-bottom: 20px;
+  }
+  .hero__offer-title {
+    margin-bottom: 20px;
+  }
+  .hero__offer-cta {
+    margin-top: 35px;
+  }
+
+  .schedule-slider.swiper {
+    padding: 0;
+  }
+
+  .stages-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stages-list__item:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .stages-list__item:nth-child(n+2)::after {
+    top: -30px;
+    left: calc(50% - 35px);
+  }
+  .stages__check-subscribe {
+    padding: 18px 30px;
+  }
+
+  .registered-table {
+    margin: 0 auto;
+  }
+  .registered-table__cell-link {
+    padding-right: 83px;
+  }
+
+  .footer {
+    padding-top: 100px;
+  }
+  .footer__nav-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__nav-item:nth-child(n+2) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 424.98px) {
+  .hero-slider__slide-img {
+    -o-object-position: -700px 0;
+       object-position: -700px 0;
+  }
+  .hero__offer {
+    margin-top: -560px;
+  }
+
+  .schedule-slider.swiper {
+    margin: 0 auto;
+  }
+
+  .stages-section__offer {
+    max-width: 100%;
+  }
+}
+@media (max-width: 374.98px) {
+  .header__socials-item:nth-child(n+2) {
+    margin-left: 15px;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .footer__info-registered {
+    font-size: 22px;
+  }
+  .footer__info-timer {
+    font-size: 16px;
+  }
+
+  .registered-table__cell-link {
+    padding-right: 50px;
   }
 }
 /* ----- ADAPTIVE END ----- */

@@ -19,7 +19,11 @@ const scheduleSlider = new Swiper('.schedule-slider', {
     breakpoints: {
         // window >=320px
         320: {
-            
+            allowSlideNext: false,
+            allowSlidePrev: false,
+            allowTouchMove: false,
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
         576: {
             spaceBetween: 30,
